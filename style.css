@@ -217,6 +217,9 @@ section.contenedor-alarmas .alarma i:hover, .hora-alarma:hover, .detalle:hover {
 
 
 /** Inicio seccion pie de página  */
+
+
+
 footer.contenedor-footer {
   width: 100%;
   background-color: var(--color-tres);
@@ -229,6 +232,15 @@ footer.contenedor-footer {
   /* justify-content: center; */
   flex-direction: column;
   gap: 15px;
+}
+
+footer.contenedor-footer .line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-fondo);
+  border-radius: 50px;
+  margin-top: 5px;
 }
 
 footer.contenedor-footer .redes-sociales img {
