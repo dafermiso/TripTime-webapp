@@ -231,6 +231,15 @@ footer.contenedor-footer {
   gap: 15px;
 }
 
+footer.contenedor-footer .line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-fondo);
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
 footer.contenedor-footer .redes-sociales img {
   width: 25px;
   margin: 6px;
