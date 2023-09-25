@@ -217,9 +217,6 @@ section.contenedor-alarmas .alarma i:hover, .hora-alarma:hover, .detalle:hover {
 
 
 /** Inicio seccion pie de página  */
-
-
-
 footer.contenedor-footer {
   width: 100%;
   background-color: var(--color-tres);
