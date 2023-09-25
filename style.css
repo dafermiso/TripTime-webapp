@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --color-fondo: #000000;
+  --color-uno: #25555B;
+  --color-dos: #469199;
+  --color-dos-50: rgba(70, 145, 153, 0.5);
+  --color-tres: #9ecacf;
+  --color-cuatro: #eaeeee;
+  --color-blanco: #fff;
+}
+
+
+/** ESTILOS GENERALES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--color-blanco);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+i {
+  color: var(--color-blanco);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  height: 100%;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  width: 8em;
+  color: #fff;
+  cursor: pointer;
+  /** Flexbox */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/** Inicio sección cabecera */
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-uno);
+}
+
+/** Inicio barra navegación */
+header .nav-bar {
+display: flex;
+}
+
+header .nav-bar .logo {
+  margin: 0 15px;
+
+}
+
+header .nav-bar .logo img {
+  width: 70px;
+  vertical-align: bottom;
+}
+
+header .nav-bar .contenedor-links {
+  width: 100%;
+  /** Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-bar .contenedor-links .link {
+  margin: 10px;
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+header .nav-bar .contenedor-links .link:hover {
+  color: var(--color-tres);
+}
+/** Fin barra navegación */
+
+  /** Inicio main */
+header .contenedor-botones {
+    width: 100%;
+    background-color: var(--color-dos);
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+    /** Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header .contenedor-botones .botones {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+}
+
+header .contenedor-botones .botones .btn {
+  background-color: var(--color-uno);
+  border-radius: 5px;
+}
+
+header .contenedor-botones .botones .btn:hover {
+  background-color: var(--color-tres);
+}
+
+header .contenedor-botones .icon {
+  display: flex;
+}
+
+header .contenedor-botones .icon i {
+  font-size: 50px;
+
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+}
+
+header .contenedor-botones .icon a i:hover {
+  color: var(--color-tres);
+}
+
+/** Fin Main */
+header .contenedor-botones .icon i.linea {
+  transform: rotate(90deg);
+}
+/** Fin  main */
+
+
+/** Inicio seccion alarmas  */
+
+section.contenedor-alarmas {
+  width: 100%;
+  color: var(--color-fondo);
+}
+
+section.contenedor-alarmas .alarma {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+section.contenedor-alarmas .alarma:hover {
+  background-color: var(--color-cuatro);
+  /* cursor: pointer; */
+}
+
+section.contenedor-alarmas .alarma .check i{
+  color: var(--color-fondo);
+  font-size: 50px;
+  color: var(--color-uno);
+}
+
+section.contenedor-alarmas .alarma .hora-alarma {
+  color: var(--color-fondo);
+}
+
+section.contenedor-alarmas .alarma .hora-alarma h5{
+  font-size: 1.6em;
+}
+
+section.contenedor-alarmas .alarma .hora-alarma p{
+  font-size: 0.7em;
+}
+
+section.contenedor-alarmas .alarma .detalle {
+  font-size: 0.5em;
+  color: var(--color-fondo);
+
+}
+
+section.contenedor-alarmas .alarma i:hover, .hora-alarma:hover, .detalle:hover {
+  cursor: default;
+}
+/** Fin seccion alarmas  */
+
+
+/** Inicio seccion pie de página  */
+footer.contenedor-footer {
+  width: 100%;
+  background-color: var(--color-tres);
+  position: absolute;
+  bottom: 0;
+
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer.contenedor-footer .redes-sociales img {
+  width: 25px;
+  margin: 6px;
+}
+
+footer.contenedor-footer .marca-registrada p {
+  font-size: 1em;
+}
+
+/** Fin seccion pie de página  */
