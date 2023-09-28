@@ -38,7 +38,7 @@
           <button class="btn" id="btn-agregar-alarma">
             <i class="material-symbols-outlined">add_alert</i>Agregar
           </button>
-          <button class="btn">
+          <button class="btn" id="btn-editar-alarma">
             <i class="material-symbols-outlined">edit_notifications</i>Editar
           </button>
           <button class="btn">
@@ -121,31 +121,304 @@
   </section>
   <!-- Fin sección alarmas -->
 
+
+  <!-- Inicio modal editar alarma -->
+  <dialog id="modal-editar">
+    <div class="header-modal-editar">
+      <h5>Alarma 27-Sep-2023 5:30 a.m. Jue</h5>
+      <a href="#" id="btn-cerrar-modal"><img src="./assets/cancel-blanco.svg" alt=""></a>
+    </div>
+
+    <div class="body-modal-editar">
+      <div>
+        <fieldset class="fielsed">
+          <legend>Sucede</legend>
+
+          <input class="input" type="radio" name="sucede" id="una-vez" value="una-vez">
+          <label for="una-vez">Una vez</label> <br>
+
+          <input class="input" type="radio" name="sucede" id="diario" value="diario">
+          <label for="diario">Diario</label> <br>
+
+          <input class="input" type="radio" name="sucede" id="semanal" value="semanal">
+          <label for="semanal">Semenal</label> <br>
+
+          <input class="input" type="radio" name="sucede" id="mensual" value="mensual">
+          <label for="mensual">Mensual</label> <br>
+
+          <input type="radio" name="sucede" id="anual" value="anual">
+          <label for="anual">Anual</label>
+
+        </fieldset>
+
+        <div class="btn-modal">
+          <button class="btn" id="btn-aceptar-modal"><img src="./assets/check_circle-blanco.svg">Aceptar</button>
+          <button class="btn" id="btn-cancelar-modal"><img src="./assets/cancel-blanco.svg" alt=""> Cancelar</button>
+        </div>
+      </div>
+
+      <div>
+        <fieldset class="fielsed">
+          <legend>Tiempo</legend>
+          <select>
+            <option>01</option>
+            <option>02</option>
+            <option>04</option>
+            <option>03</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+
+          <select>
+            <option>00</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+          </select>
+
+          <select>
+            <option value="">a.m.</option>
+            <option value="">p.m.</option>
+          </select>
+          <img src="./assets/time.svg" alt="" width="30px">
+        </fieldset>
+
+        <fieldset class="fielsed">
+          <legend>Repetir</legend>
+          <input class="input" type="checkbox" name="lun" id="lunes" value="lunes">
+          <label for="lunes">Lunes</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="martes" value="martes">
+          <label for="martes">Martes</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="miercoles" value="miercoles">
+          <label for="miercoles">Miércoles</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="jueves" value="jueves">
+          <label for="jueves">Jueves</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="viernes" value="viernes">
+          <label for="viernes">Viernes</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="sabado" value="sabado">
+          <label for="sabado">Sábado</label> <br>
+
+          <input class="input" type="checkbox" name="lun" id="domingo" value="domingo">
+          <label for="domingo">Domingo</label> <br>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset class="fielsed">
+          <legend>Sonido</legend>
+          <div class="btn-modal">
+            <select>
+              <option>Campanas</option>
+              <option>Fortuna</option>
+              <option>Desolación</option>
+              <option>Electrónica</option>
+            </select>
+            <img id="img-play-circle" src="./assets/play_circle.svg" alt="" width="30px">
+            <button class="btn" id="btn-buscar-sonido">Buscar</button>
+          </div>
+
+          <div>
+            <input class="input" type="checkbox" name="lun" id="encendido" value="encendido">
+            <label for="encendido">Encendido/Apagado</label> <br>
+
+            <input class="input" type="checkbox" name="lun" id="repetir-sonido" value="repetir-sonido">
+            <label for="repetir-sonido">Repetir sonido</label> <br>
+
+            <input class="input" type="checkbox" name="lun" id="posponer-sonido" value="posponer-sonido">
+            <label for="posponer-sonido">Posponer</label> <br>
+          </div>
+        </fieldset>
+
+        <fieldset class="fielsed">
+          <legend>Etiqueta</legend>
+          <div class="btn-modal">
+            <!-- <div> -->
+            <input type="text" size="30">
+            <!-- </div> -->
+            <!-- <div> -->
+            <input class="input" type="checkbox" name="ver-mensaje" id="ver-mensaje" value="ver-mensaje">
+            <label for="ver-mensaje">Ver mensaje</label>
+            <!-- </div> -->
+          </div>
+
+      </div>
+
+
+  </dialog>
+
+  <!-- Fin modal editar alarma -->
+
+
+
+
+
+  <!-- Inicio modal agregar alarma -->
+  <dialog id="modal-agregar">
+      <div class="header-modal-agregar">
+        <h5>Alarma 27-Sep-2023 5:30 a.m. Jue</h5>
+        <a href="#" id="btn-cerrar-modal-agregar"><img src="./assets/cancel-blanco.svg" alt=""></a>
+      </div>
+
+      <div class="body-modal-agregar">
+        <div>
+          <fieldset class="fielsed">
+            <legend>Sucede</legend>
+
+              <input class="input" type="radio" name="sucede" id="una-vez" value="una-vez">
+              <label for="una-vez">Una vez</label> <br>
+
+              <input class="input" type="radio" name="sucede" id="diario" value="diario">
+              <label for="diario">Diario</label> <br>
+
+              <input class="input" type="radio" name="sucede" id="semanal" value="semanal">
+              <label for="semanal">Semenal</label> <br>
+
+              <input class="input" type="radio" name="sucede" id="mensual" value="mensual">
+              <label for="mensual">Mensual</label> <br>
+
+              <input type="radio" name="sucede" id="anual" value="anual">
+              <label for="anual">Anual</label>
+
+            </fieldset>
+
+            <div class="btn-modal">
+              <button class="btn" id="btn-aceptar-modal-agregar"><img src="./assets/check_circle-blanco.svg">Aceptar</button>
+              <button class="btn" id="btn-cancelar-modal-agregar"><img src="./assets/cancel-blanco.svg" alt=""> Cancelar</button>
+            </div>
+          </div>
+
+          <div>
+            <fieldset class="fielsed">
+              <legend>Tiempo</legend>
+              <select>
+                <option>01</option>
+                <option>02</option>
+                <option>04</option>
+                <option>03</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+
+              <select>
+                <option>00</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+              </select>
+
+              <select>
+                <option value="">a.m.</option>
+                <option value="">p.m.</option>
+              </select>
+              <img src="./assets/time.svg" alt="" width="30px">
+            </fieldset>
+
+            <fieldset class="fielsed">
+              <legend>Fecha</legend>
+                <input class="input" type="date" name="fecha" id="fecha" value="fecha">
+                <img src="./assets/calendar_month 1.svg" alt="" width="30px">
+                <h5>Mañana</h5>
+            </fieldset>
+          </div>
+
+          <div>
+            <fieldset class="fielsed">
+              <legend>Sonido</legend>
+              <div class="btn-modal">
+                <select>
+                  <option>Campanas</option>
+                  <option>Fortuna</option>
+                  <option>Desolación</option>
+                  <option>Electrónica</option>
+                </select>
+                <img id="img-play-circle" src="./assets/play_circle.svg" alt="" width="30px">
+                <button class="btn" id="btn-buscar-sonido">Buscar</button>
+              </div>
+
+              <div>
+                <input class="input" type="checkbox" name="lun" id="encendido" value="encendido">
+                <label for="encendido">Encendido/Apagado</label> <br>
+
+                <input class="input" type="checkbox" name="lun" id="repetir-sonido" value="repetir-sonido">
+                <label for="repetir-sonido">Repetir sonido</label> <br>
+
+                <input class="input" type="checkbox" name="lun" id="posponer-sonido" value="posponer-sonido">
+                <label for="posponer-sonido">Posponer</label> <br>
+              </div>
+            </fieldset>
+
+            <fieldset class="fielsed">
+              <legend>Etiqueta</legend>
+              <div class="btn-modal">
+                <!-- <div> -->
+                  <input type="text" size="30">
+                <!-- </div> -->
+              <!-- <div> -->
+                <input class="input" type="checkbox" name="ver-mensaje" id="ver-mensaje" value="ver-mensaje">
+                <label for="ver-mensaje">Ver mensaje</label>
+              <!-- </div> -->
+          </div>
+
+      </div>
+
+
+  </dialog>
+
+  <!-- Fin modal agregar alarma -->
+
+
+
+
   <!-- Inicio modal eliminar alarma -->
-  <dialog id="modal">
-      <div class="header-modal">
-        <h5>TripTime</h5>
-        <a href="#" id="btn-cerrar-modal"><img src="./assets/cancel-blanco.svg" alt=""></a>
-      </div>
+  <dialog id="modal-eliminar">
+    <div class="header-modal-eliminar">
+      <h5>TripTime</h5>
+      <a href="#" id="btn-cerrar-modal-eliminar"><img src="./assets/cancel-blanco.svg" alt=""></a>
+    </div>
 
-      <div class="body-modal">
-        <img src="./assets/info-blanco.svg" alt="">
-        <p>¿Eliminar alarma 6:45 a.m. - Buenos días...!?</p>
-      </div>
+    <div class="body-modal-eliminar">
+      <img src="./assets/info-blanco.svg" alt="">
+      <p>¿Eliminar alarma 6:45 a.m. - Buenos días...!?</p>
+    </div>
 
-      <form action="">
-        <input class="check" type="checkbox" name="check" id="check">
-        <label class="check" for="check">No mostrar de nuevo</label>
-      </form>
+    <form action="">
+      <input class="check" type="checkbox" name="check" id="check">
+      <label class="check" for="check">No mostrar de nuevo</label>
+    </form>
 
-      <div class="btn-modal">
-        <button class="btn" id="btn-aceptar-modal"><img src="./assets/check_circle-blanco.svg">Aceptar</button>
-        <button class="btn" id="btn-cancelar-modal"><img src="./assets/cancel-blanco.svg" alt=""> Cancelar</button>
-      </div>
+    <div class="btn-modal">
+      <button class="btn" id="btn-aceptar-modal-eliminar"><img src="./assets/check_circle-blanco.svg">Aceptar</button>
+      <button class="btn" id="btn-cancelar-modal-eliminar"><img src="./assets/cancel-blanco.svg" alt=""> Cancelar</button>
+    </div>
   </dialog>
 
 
-  <!-- Fin modal agregar alarma -->
+  <!-- Fin modal eliminar alarma -->
+
+
+
+
 
 
 
