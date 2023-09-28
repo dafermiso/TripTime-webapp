@@ -257,7 +257,7 @@ footer.contenedor-footer .marca-registrada p {
 
 
 /** Inicio modal agregar alarma */
-dialog#modal {
+dialog#modal-agregar {
   background-color: var(--color-modal);
   color: var(--color-blanco);
   border: none;
@@ -266,11 +266,11 @@ dialog#modal {
   padding: auto;
 }
 
-dialog#modal::backdrop {
+dialog#modal-agregar::backdrop {
   background-color: rgba(0,0,0,.55);
 }
 
-dialog#modal .header-modal {
+dialog#modal-agregar .header-modal-agregar {
   /** Flexbox */
     display: flex;
     align-items: center;
@@ -278,32 +278,19 @@ dialog#modal .header-modal {
     margin: 5px;
 }
 
-dialog#modal .header-modal a img {
-  width: 30px;
-}
 
-dialog#modal .body-modal {
-  /** Flexbox */
+dialog#modal-agregar .body-modal-agregar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+dialog#modal-agregar .body-modal-agregar .fielsed {
   margin: 30px;
+  padding: 20px 0px 10px 10px;
+  border-radius: 20px;
+
 }
 
-dialog#modal .body-modal img {
-  width: 50px;
-}
-
-dialog#modal form {
-  margin: 10px 40px;
-  cursor: pointer;
-}
-
-dialog#modal form .check:hover {
-  cursor: pointer;
-}
-
-dialog#modal .btn-modal {
+dialog#modal-agregar .btn-modal {
   /** Flexbox */
   display: flex;
   align-items: center;
@@ -311,19 +298,169 @@ dialog#modal .btn-modal {
   margin-top: 40px;
 }
 
-dialog#modal .btn-modal .btn {
+dialog#modal-agregar .btn-modal .btn {
   background-color: var(--color-uno);
   border-radius: 5px;
 }
 
-dialog#modal .btn-modal .btn:hover {
+dialog#modal-agregar .btn-modal .btn:hover {
   background-color: var(--color-tres);
 }
 
-dialog#modal .btn-modal .btn img{
+dialog#modal-agregar .btn-modal .btn img{
   border-radius: 5px;
   width: 30px;
 }
 
+dialog#modal-agregar #img-play-circle {
+  width: 30px;
+}
+
+dialog#modal-agregar #img-play-circle:hover {
+  cursor: pointer;
+}
+
 /** Fin modal agregar alarma */
 
+
+/** Inicio modal editar alarma */
+dialog#modal-editar {
+  background-color: var(--color-modal);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  padding: auto;
+}
+
+dialog#modal-editar::backdrop {
+  background-color: rgba(0, 0, 0, .55);
+}
+
+dialog#modal-editar .header-modal-editar {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+
+dialog#modal-editar .body-modal-editar {
+  /** Flexbox */
+  display: flex;
+}
+
+dialog#modal-editar .body-modal-editar .fielsed {
+  margin: 30px;
+  padding: 20px 0px 10px 10px;
+  border-radius: 20px;
+
+}
+
+dialog#modal-editar .btn-modal {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+dialog#modal-editar .btn-modal .btn {
+  background-color: var(--color-uno);
+  border-radius: 5px;
+}
+
+dialog#modal-editar .btn-modal .btn:hover {
+  background-color: var(--color-tres);
+}
+
+dialog#modal-editar .btn-modal .btn img {
+  border-radius: 5px;
+  width: 30px;
+}
+
+dialog#modal-editar #img-play-circle {
+  width: 30px;
+}
+
+dialog#modal-editar #img-play-circle:hover {
+  cursor: pointer;
+}
+
+/** Fin modal agregar alarma */
+
+
+
+
+
+/** Inicio modal eliminar alarma */
+dialog#modal-eliminar {
+  background-color: var(--color-modal);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  padding: auto;
+}
+
+dialog#modal-eliminar::backdrop {
+  background-color: rgba(0, 0, 0, .55);
+}
+
+dialog#modal-eliminar .header-modal-eliminar {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+dialog#modal-eliminar .header-modal-eliminar a img {
+  width: 30px;
+}
+
+dialog#modal-eliminar .body-modal-eliminar {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+dialog#modal-eliminar .body-modal-eliminar img {
+  width: 50px;
+}
+
+dialog#modal-eliminar form {
+  margin: 10px 40px;
+  cursor: pointer;
+}
+
+dialog#modal-eliminar form .check:hover {
+  cursor: pointer;
+}
+
+dialog#modal-eliminar .btn-modal {
+  /** Flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+dialog#modal-eliminar .btn-modal .btn {
+  background-color: var(--color-uno);
+  border-radius: 5px;
+}
+
+dialog#modal-eliminar .btn-modal .btn:hover {
+  background-color: var(--color-tres);
+}
+
+dialog#modal-eliminar .btn-modal .btn img {
+  border-radius: 5px;
+  width: 30px;
+}
+
+/** Fin modal eliminar alarma */
