@@ -256,8 +256,8 @@ footer.contenedor-footer .marca-registrada p {
 
 
 
-/** Inicio modal editar alarma */
-dialog#modal-editar {
+/** Inicio modal agregar alarma */
+dialog#modal {
   background-color: var(--color-modal);
   color: var(--color-blanco);
   border: none;
@@ -266,11 +266,11 @@ dialog#modal-editar {
   padding: auto;
 }
 
-dialog#modal-editar::backdrop {
+dialog#modal::backdrop {
   background-color: rgba(0,0,0,.55);
 }
 
-dialog#modal-editar .header-modal-editar {
+dialog#modal .header-modal {
   /** Flexbox */
     display: flex;
     align-items: center;
@@ -278,39 +278,32 @@ dialog#modal-editar .header-modal-editar {
     margin: 5px;
 }
 
+dialog#modal .header-modal a img {
+  width: 30px;
+}
 
-dialog#modal-editar .body-modal-editar {
-  /* flex-direction: column; */
+dialog#modal .body-modal {
   /** Flexbox */
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* margin: 30px; */
-  /* width: 500px; */
-}
-
-dialog#modal-editar .body-modal-editar .fielsed {
-  /** Flexbox */
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: space-between;
   margin: 30px;
-  padding: 20px 0px 10px 10px;
-  /* border: 1px solid red; */
-
-  border-radius: 20px;
-
 }
 
-/* dialog#modal-editar .body-modal-editar .fielsed legend {
-  border: 1px solid blue;
-} */
+dialog#modal .body-modal img {
+  width: 50px;
+}
 
+dialog#modal form {
+  margin: 10px 40px;
+  cursor: pointer;
+}
 
+dialog#modal form .check:hover {
+  cursor: pointer;
+}
 
-
-dialog#modal-editar .btn-modal {
+dialog#modal .btn-modal {
   /** Flexbox */
   display: flex;
   align-items: center;
@@ -318,28 +311,19 @@ dialog#modal-editar .btn-modal {
   margin-top: 40px;
 }
 
-dialog#modal-editar .btn-modal .btn {
+dialog#modal .btn-modal .btn {
   background-color: var(--color-uno);
   border-radius: 5px;
 }
 
-dialog#modal-editar .btn-modal .btn:hover {
+dialog#modal .btn-modal .btn:hover {
   background-color: var(--color-tres);
 }
 
-dialog#modal-editar .btn-modal .btn img{
+dialog#modal .btn-modal .btn img{
   border-radius: 5px;
   width: 30px;
 }
 
-dialog#modal-editar #img-play-circle {
-  width: 30px;
-}
-
-dialog#modal-editar #img-play-circle:hover {
-  cursor: pointer;
-}
-
 /** Fin modal agregar alarma */
-
 
